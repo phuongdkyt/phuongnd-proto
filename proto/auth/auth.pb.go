@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.28.0
 // 	protoc        (unknown)
-// source: ptoto/auth/auth.proto
+// source: proto/auth/auth.proto
 
 package proto_gen
 
@@ -33,7 +33,7 @@ type TokenRequest struct {
 func (x *TokenRequest) Reset() {
 	*x = TokenRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[0]
+		mi := &file_proto_auth_auth_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -46,7 +46,7 @@ func (x *TokenRequest) String() string {
 func (*TokenRequest) ProtoMessage() {}
 
 func (x *TokenRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[0]
+	mi := &file_proto_auth_auth_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -59,7 +59,7 @@ func (x *TokenRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TokenRequest.ProtoReflect.Descriptor instead.
 func (*TokenRequest) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{0}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *TokenRequest) GetToken() string {
@@ -80,7 +80,7 @@ type ClearDataResponse struct {
 func (x *ClearDataResponse) Reset() {
 	*x = ClearDataResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[1]
+		mi := &file_proto_auth_auth_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -93,7 +93,7 @@ func (x *ClearDataResponse) String() string {
 func (*ClearDataResponse) ProtoMessage() {}
 
 func (x *ClearDataResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[1]
+	mi := &file_proto_auth_auth_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -106,7 +106,7 @@ func (x *ClearDataResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ClearDataResponse.ProtoReflect.Descriptor instead.
 func (*ClearDataResponse) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{1}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *ClearDataResponse) GetClearData() string {
@@ -127,7 +127,7 @@ type EncryptDataResponse struct {
 func (x *EncryptDataResponse) Reset() {
 	*x = EncryptDataResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[2]
+		mi := &file_proto_auth_auth_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -140,7 +140,7 @@ func (x *EncryptDataResponse) String() string {
 func (*EncryptDataResponse) ProtoMessage() {}
 
 func (x *EncryptDataResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[2]
+	mi := &file_proto_auth_auth_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -153,7 +153,7 @@ func (x *EncryptDataResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EncryptDataResponse.ProtoReflect.Descriptor instead.
 func (*EncryptDataResponse) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{2}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *EncryptDataResponse) GetData() string {
@@ -175,7 +175,7 @@ type EncryptDataRequest struct {
 func (x *EncryptDataRequest) Reset() {
 	*x = EncryptDataRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[3]
+		mi := &file_proto_auth_auth_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -188,7 +188,7 @@ func (x *EncryptDataRequest) String() string {
 func (*EncryptDataRequest) ProtoMessage() {}
 
 func (x *EncryptDataRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[3]
+	mi := &file_proto_auth_auth_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -201,7 +201,7 @@ func (x *EncryptDataRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EncryptDataRequest.ProtoReflect.Descriptor instead.
 func (*EncryptDataRequest) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{3}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *EncryptDataRequest) GetEncryptData() string {
@@ -229,7 +229,7 @@ type VerifyResponse struct {
 func (x *VerifyResponse) Reset() {
 	*x = VerifyResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[4]
+		mi := &file_proto_auth_auth_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -242,7 +242,7 @@ func (x *VerifyResponse) String() string {
 func (*VerifyResponse) ProtoMessage() {}
 
 func (x *VerifyResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[4]
+	mi := &file_proto_auth_auth_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -255,7 +255,7 @@ func (x *VerifyResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use VerifyResponse.ProtoReflect.Descriptor instead.
 func (*VerifyResponse) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{4}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *VerifyResponse) GetSuccess() bool {
@@ -276,7 +276,7 @@ type SessionRequest struct {
 func (x *SessionRequest) Reset() {
 	*x = SessionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[5]
+		mi := &file_proto_auth_auth_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -289,7 +289,7 @@ func (x *SessionRequest) String() string {
 func (*SessionRequest) ProtoMessage() {}
 
 func (x *SessionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[5]
+	mi := &file_proto_auth_auth_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -302,7 +302,7 @@ func (x *SessionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SessionRequest.ProtoReflect.Descriptor instead.
 func (*SessionRequest) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{5}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *SessionRequest) GetSecretKeyId() string {
@@ -324,7 +324,7 @@ type SecretKeyResponse struct {
 func (x *SecretKeyResponse) Reset() {
 	*x = SecretKeyResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[6]
+		mi := &file_proto_auth_auth_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -337,7 +337,7 @@ func (x *SecretKeyResponse) String() string {
 func (*SecretKeyResponse) ProtoMessage() {}
 
 func (x *SecretKeyResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[6]
+	mi := &file_proto_auth_auth_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -350,7 +350,7 @@ func (x *SecretKeyResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SecretKeyResponse.ProtoReflect.Descriptor instead.
 func (*SecretKeyResponse) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{6}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *SecretKeyResponse) GetSecretKey() string {
@@ -378,7 +378,7 @@ type Session struct {
 func (x *Session) Reset() {
 	*x = Session{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[7]
+		mi := &file_proto_auth_auth_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -391,7 +391,7 @@ func (x *Session) String() string {
 func (*Session) ProtoMessage() {}
 
 func (x *Session) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[7]
+	mi := &file_proto_auth_auth_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -404,7 +404,7 @@ func (x *Session) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Session.ProtoReflect.Descriptor instead.
 func (*Session) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{7}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *Session) GetSessionId() string {
@@ -426,7 +426,7 @@ type TokenResponse struct {
 func (x *TokenResponse) Reset() {
 	*x = TokenResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[8]
+		mi := &file_proto_auth_auth_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -439,7 +439,7 @@ func (x *TokenResponse) String() string {
 func (*TokenResponse) ProtoMessage() {}
 
 func (x *TokenResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[8]
+	mi := &file_proto_auth_auth_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -452,7 +452,7 @@ func (x *TokenResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TokenResponse.ProtoReflect.Descriptor instead.
 func (*TokenResponse) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{8}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *TokenResponse) GetToken() string {
@@ -480,7 +480,7 @@ type RevokeTokenResponse struct {
 func (x *RevokeTokenResponse) Reset() {
 	*x = RevokeTokenResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[9]
+		mi := &file_proto_auth_auth_proto_msgTypes[9]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -493,7 +493,7 @@ func (x *RevokeTokenResponse) String() string {
 func (*RevokeTokenResponse) ProtoMessage() {}
 
 func (x *RevokeTokenResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[9]
+	mi := &file_proto_auth_auth_proto_msgTypes[9]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -506,7 +506,7 @@ func (x *RevokeTokenResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RevokeTokenResponse.ProtoReflect.Descriptor instead.
 func (*RevokeTokenResponse) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{9}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *RevokeTokenResponse) GetMessage() string {
@@ -527,7 +527,7 @@ type RevokeTokenRequest struct {
 func (x *RevokeTokenRequest) Reset() {
 	*x = RevokeTokenRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[10]
+		mi := &file_proto_auth_auth_proto_msgTypes[10]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -540,7 +540,7 @@ func (x *RevokeTokenRequest) String() string {
 func (*RevokeTokenRequest) ProtoMessage() {}
 
 func (x *RevokeTokenRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[10]
+	mi := &file_proto_auth_auth_proto_msgTypes[10]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -553,7 +553,7 @@ func (x *RevokeTokenRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RevokeTokenRequest.ProtoReflect.Descriptor instead.
 func (*RevokeTokenRequest) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{10}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *RevokeTokenRequest) GetToken() string {
@@ -575,7 +575,7 @@ type ClearDataRequest struct {
 func (x *ClearDataRequest) Reset() {
 	*x = ClearDataRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_ptoto_auth_auth_proto_msgTypes[11]
+		mi := &file_proto_auth_auth_proto_msgTypes[11]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -588,7 +588,7 @@ func (x *ClearDataRequest) String() string {
 func (*ClearDataRequest) ProtoMessage() {}
 
 func (x *ClearDataRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_ptoto_auth_auth_proto_msgTypes[11]
+	mi := &file_proto_auth_auth_proto_msgTypes[11]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -601,7 +601,7 @@ func (x *ClearDataRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ClearDataRequest.ProtoReflect.Descriptor instead.
 func (*ClearDataRequest) Descriptor() ([]byte, []int) {
-	return file_ptoto_auth_auth_proto_rawDescGZIP(), []int{11}
+	return file_proto_auth_auth_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *ClearDataRequest) GetClearData() string {
@@ -618,10 +618,10 @@ func (x *ClearDataRequest) GetSecretKey() string {
 	return ""
 }
 
-var File_ptoto_auth_auth_proto protoreflect.FileDescriptor
+var File_proto_auth_auth_proto protoreflect.FileDescriptor
 
-var file_ptoto_auth_auth_proto_rawDesc = []byte{
-	0x0a, 0x15, 0x70, 0x74, 0x6f, 0x74, 0x6f, 0x2f, 0x61, 0x75, 0x74, 0x68, 0x2f, 0x61, 0x75, 0x74,
+var file_proto_auth_auth_proto_rawDesc = []byte{
+	0x0a, 0x15, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2f, 0x61, 0x75, 0x74, 0x68, 0x2f, 0x61, 0x75, 0x74,
 	0x68, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x05, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x1a, 0x1c,
 	0x67, 0x6f, 0x6f, 0x67, 0x6c, 0x65, 0x2f, 0x61, 0x70, 0x69, 0x2f, 0x61, 0x6e, 0x6e, 0x6f, 0x74,
 	0x61, 0x74, 0x69, 0x6f, 0x6e, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x1a, 0x1b, 0x67, 0x6f,
@@ -709,19 +709,19 @@ var file_ptoto_auth_auth_proto_rawDesc = []byte{
 }
 
 var (
-	file_ptoto_auth_auth_proto_rawDescOnce sync.Once
-	file_ptoto_auth_auth_proto_rawDescData = file_ptoto_auth_auth_proto_rawDesc
+	file_proto_auth_auth_proto_rawDescOnce sync.Once
+	file_proto_auth_auth_proto_rawDescData = file_proto_auth_auth_proto_rawDesc
 )
 
-func file_ptoto_auth_auth_proto_rawDescGZIP() []byte {
-	file_ptoto_auth_auth_proto_rawDescOnce.Do(func() {
-		file_ptoto_auth_auth_proto_rawDescData = protoimpl.X.CompressGZIP(file_ptoto_auth_auth_proto_rawDescData)
+func file_proto_auth_auth_proto_rawDescGZIP() []byte {
+	file_proto_auth_auth_proto_rawDescOnce.Do(func() {
+		file_proto_auth_auth_proto_rawDescData = protoimpl.X.CompressGZIP(file_proto_auth_auth_proto_rawDescData)
 	})
-	return file_ptoto_auth_auth_proto_rawDescData
+	return file_proto_auth_auth_proto_rawDescData
 }
 
-var file_ptoto_auth_auth_proto_msgTypes = make([]protoimpl.MessageInfo, 12)
-var file_ptoto_auth_auth_proto_goTypes = []interface{}{
+var file_proto_auth_auth_proto_msgTypes = make([]protoimpl.MessageInfo, 12)
+var file_proto_auth_auth_proto_goTypes = []interface{}{
 	(*TokenRequest)(nil),        // 0: proto.TokenRequest
 	(*ClearDataResponse)(nil),   // 1: proto.ClearDataResponse
 	(*EncryptDataResponse)(nil), // 2: proto.EncryptDataResponse
@@ -736,7 +736,7 @@ var file_ptoto_auth_auth_proto_goTypes = []interface{}{
 	(*ClearDataRequest)(nil),    // 11: proto.ClearDataRequest
 	(*emptypb.Empty)(nil),       // 12: google.protobuf.Empty
 }
-var file_ptoto_auth_auth_proto_depIdxs = []int32{
+var file_proto_auth_auth_proto_depIdxs = []int32{
 	12, // 0: proto.AuthService.InitSecretKey:input_type -> google.protobuf.Empty
 	12, // 1: proto.AuthService.CreateToken:input_type -> google.protobuf.Empty
 	0,  // 2: proto.AuthService.VerifyToken:input_type -> proto.TokenRequest
@@ -760,13 +760,13 @@ var file_ptoto_auth_auth_proto_depIdxs = []int32{
 	0,  // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_ptoto_auth_auth_proto_init() }
-func file_ptoto_auth_auth_proto_init() {
-	if File_ptoto_auth_auth_proto != nil {
+func init() { file_proto_auth_auth_proto_init() }
+func file_proto_auth_auth_proto_init() {
+	if File_proto_auth_auth_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_ptoto_auth_auth_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TokenRequest); i {
 			case 0:
 				return &v.state
@@ -778,7 +778,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ClearDataResponse); i {
 			case 0:
 				return &v.state
@@ -790,7 +790,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*EncryptDataResponse); i {
 			case 0:
 				return &v.state
@@ -802,7 +802,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*EncryptDataRequest); i {
 			case 0:
 				return &v.state
@@ -814,7 +814,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*VerifyResponse); i {
 			case 0:
 				return &v.state
@@ -826,7 +826,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SessionRequest); i {
 			case 0:
 				return &v.state
@@ -838,7 +838,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SecretKeyResponse); i {
 			case 0:
 				return &v.state
@@ -850,7 +850,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Session); i {
 			case 0:
 				return &v.state
@@ -862,7 +862,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TokenResponse); i {
 			case 0:
 				return &v.state
@@ -874,7 +874,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*RevokeTokenResponse); i {
 			case 0:
 				return &v.state
@@ -886,7 +886,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*RevokeTokenRequest); i {
 			case 0:
 				return &v.state
@@ -898,7 +898,7 @@ func file_ptoto_auth_auth_proto_init() {
 				return nil
 			}
 		}
-		file_ptoto_auth_auth_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_auth_auth_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ClearDataRequest); i {
 			case 0:
 				return &v.state
@@ -915,18 +915,18 @@ func file_ptoto_auth_auth_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_ptoto_auth_auth_proto_rawDesc,
+			RawDescriptor: file_proto_auth_auth_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   12,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_ptoto_auth_auth_proto_goTypes,
-		DependencyIndexes: file_ptoto_auth_auth_proto_depIdxs,
-		MessageInfos:      file_ptoto_auth_auth_proto_msgTypes,
+		GoTypes:           file_proto_auth_auth_proto_goTypes,
+		DependencyIndexes: file_proto_auth_auth_proto_depIdxs,
+		MessageInfos:      file_proto_auth_auth_proto_msgTypes,
 	}.Build()
-	File_ptoto_auth_auth_proto = out.File
-	file_ptoto_auth_auth_proto_rawDesc = nil
-	file_ptoto_auth_auth_proto_goTypes = nil
-	file_ptoto_auth_auth_proto_depIdxs = nil
+	File_proto_auth_auth_proto = out.File
+	file_proto_auth_auth_proto_rawDesc = nil
+	file_proto_auth_auth_proto_goTypes = nil
+	file_proto_auth_auth_proto_depIdxs = nil
 }

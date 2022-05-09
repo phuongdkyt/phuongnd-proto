@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "ptoto/auth/auth.proto",
+    "title": "proto/auth/auth.proto",
     "version": "version not set"
   },
   "tags": [
