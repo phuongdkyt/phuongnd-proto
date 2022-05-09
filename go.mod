@@ -1,4 +1,4 @@
-module phuongnd/proto-gen
+module github.com/phuongdkyt/phuongnd-proto
 
 go 1.18
 
