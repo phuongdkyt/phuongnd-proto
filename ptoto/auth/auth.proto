@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "phuongnd/proto-gen/service;proto_gen";
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+
+
+// Here is the overall greeting service definition where we define all our endpoints
+service AuthService {
+  rpc InitSecretKey(google.protobuf.Empty) returns (SecretKeyResponse);
+  rpc CreateToken(google.protobuf.Empty) returns (TokenResponse);
+  rpc VerifyToken(TokenRequest) returns (VerifyResponse);
+  rpc RevokeToken(RevokeTokenRequest) returns (RevokeTokenResponse);
+  rpc InitSession(SessionRequest) returns (Session);
+  rpc VerifySession(Session) returns (VerifyResponse);
+  rpc EncryptData(ClearDataRequest) returns (EncryptDataResponse);
+  rpc DecryptData(EncryptDataRequest) returns (ClearDataResponse);
+}
+
+message TokenRequest{
+  string token = 1;
+}
+message ClearDataResponse {
+  string clear_data = 1;
+}
+message EncryptDataResponse {
+  string data = 1;
+}
+message EncryptDataRequest {
+  string encrypt_data = 1;
+  string secret_key = 2;
+}
+message VerifyResponse{
+  bool success = 1;
+}
+message SessionRequest{
+  string secret_key_id = 1;
+}
+message SecretKeyResponse {
+  string secret_key = 1;
+  string secret_key_id = 2;
+}
+message Session {
+  string session_id = 1;
+}
+message TokenResponse {
+  string token = 1;
+  int64 expire_time = 2;
+}
+message RevokeTokenResponse {
+  string message = 1;
+}
+message RevokeTokenRequest {
+  string token = 1;
+}
+message ClearDataRequest {
+  string clear_data = 1;
+  string secret_key = 2;
+}
