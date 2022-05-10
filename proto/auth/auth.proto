@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package proto;
 
-option go_package = "phuongnd/proto-gen/service;proto_gen";
+option go_package = "phuongnd/proto-gen/service;api";
 import "google/api/annotations.proto";
 import "google/protobuf/empty.proto";
 

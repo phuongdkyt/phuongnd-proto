@@ -4,7 +4,7 @@
 // - protoc             (unknown)
 // source: proto/auth/auth.proto
 
-package proto_gen
+package api
 
 import (
 	context "context"
