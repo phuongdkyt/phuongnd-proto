@@ -24,7 +24,7 @@ const _ = grpc.SupportPackageIsVersion7
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type AuthServiceClient interface {
 	InitSecretKey(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*SecretKeyResponse, error)
-	CreateToken(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*TokenResponse, error)
+	CreateToken(ctx context.Context, in *CreateTokenRequest, opts ...grpc.CallOption) (*TokenResponse, error)
 	VerifyToken(ctx context.Context, in *TokenRequest, opts ...grpc.CallOption) (*VerifyResponse, error)
 	RevokeToken(ctx context.Context, in *RevokeTokenRequest, opts ...grpc.CallOption) (*RevokeTokenResponse, error)
 	InitSession(ctx context.Context, in *SessionRequest, opts ...grpc.CallOption) (*Session, error)
@@ -50,7 +50,7 @@ func (c *authServiceClient) InitSecretKey(ctx context.Context, in *emptypb.Empty
 	return out, nil
 }
 
-func (c *authServiceClient) CreateToken(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*TokenResponse, error) {
+func (c *authServiceClient) CreateToken(ctx context.Context, in *CreateTokenRequest, opts ...grpc.CallOption) (*TokenResponse, error) {
 	out := new(TokenResponse)
 	err := c.cc.Invoke(ctx, "/proto.AuthService/CreateToken", in, out, opts...)
 	if err != nil {
@@ -118,7 +118,7 @@ func (c *authServiceClient) DecryptData(ctx context.Context, in *EncryptDataRequ
 // for forward compatibility
 type AuthServiceServer interface {
 	InitSecretKey(context.Context, *emptypb.Empty) (*SecretKeyResponse, error)
-	CreateToken(context.Context, *emptypb.Empty) (*TokenResponse, error)
+	CreateToken(context.Context, *CreateTokenRequest) (*TokenResponse, error)
 	VerifyToken(context.Context, *TokenRequest) (*VerifyResponse, error)
 	RevokeToken(context.Context, *RevokeTokenRequest) (*RevokeTokenResponse, error)
 	InitSession(context.Context, *SessionRequest) (*Session, error)
@@ -134,7 +134,7 @@ type UnimplementedAuthServiceServer struct {
 func (UnimplementedAuthServiceServer) InitSecretKey(context.Context, *emptypb.Empty) (*SecretKeyResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method InitSecretKey not implemented")
 }
-func (UnimplementedAuthServiceServer) CreateToken(context.Context, *emptypb.Empty) (*TokenResponse, error) {
+func (UnimplementedAuthServiceServer) CreateToken(context.Context, *CreateTokenRequest) (*TokenResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateToken not implemented")
 }
 func (UnimplementedAuthServiceServer) VerifyToken(context.Context, *TokenRequest) (*VerifyResponse, error) {
@@ -186,7 +186,7 @@ func _AuthService_InitSecretKey_Handler(srv interface{}, ctx context.Context, de
 }
 
 func _AuthService_CreateToken_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
+	in := new(CreateTokenRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -198,7 +198,7 @@ func _AuthService_CreateToken_Handler(srv interface{}, ctx context.Context, dec 
 		FullMethod: "/proto.AuthService/CreateToken",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AuthServiceServer).CreateToken(ctx, req.(*emptypb.Empty))
+		return srv.(AuthServiceServer).CreateToken(ctx, req.(*CreateTokenRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }

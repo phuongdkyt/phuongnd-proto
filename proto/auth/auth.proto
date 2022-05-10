@@ -10,7 +10,7 @@ import "google/protobuf/empty.proto";
 // Here is the overall greeting service definition where we define all our endpoints
 service AuthService {
   rpc InitSecretKey(google.protobuf.Empty) returns (SecretKeyResponse);
-  rpc CreateToken(google.protobuf.Empty) returns (TokenResponse);
+  rpc CreateToken(CreateTokenRequest) returns (TokenResponse);
   rpc VerifyToken(TokenRequest) returns (VerifyResponse);
   rpc RevokeToken(RevokeTokenRequest) returns (RevokeTokenResponse);
   rpc InitSession(SessionRequest) returns (Session);
@@ -18,7 +18,10 @@ service AuthService {
   rpc EncryptData(ClearDataRequest) returns (EncryptDataResponse);
   rpc DecryptData(EncryptDataRequest) returns (ClearDataResponse);
 }
-
+message CreateTokenRequest {
+  string user_id = 1;
+  string user_name = 2;
+}
 message TokenRequest{
   string token = 1;
 }
