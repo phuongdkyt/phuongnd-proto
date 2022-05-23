@@ -37,6 +37,8 @@ message EncryptDataRequest {
 }
 message VerifyResponse{
   bool success = 1;
+  string user_id = 2;
+  string user_name = 3;
 }
 message SessionRequest{
   string secret_key_id = 1;
