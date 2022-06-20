@@ -58,7 +58,7 @@ message RevokeTokenResponse {
   string message = 1;
 }
 message RevokeTokenRequest {
-  string token = 1;
+  string userId = 1;
 }
 message ClearDataRequest {
   string clear_data = 1;
